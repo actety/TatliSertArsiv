@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şaban Ataş Cinayeti - Canlı Yayında İtiraf</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px; /* Reduced padding for better mobile display */
+            box-sizing: border-box;
+        }
+        .banner {
+            background-color: #5A7D9A; /* Light dark blue background */
+            color: white; /* White text */
+            text-align: center; /* Centered text */
+            padding: 15px; /* Reduced padding */
+            font-size: 22px; /* Adjust font size */
+            position: relative; /* Position for the home link */
+        }
+        .home-link {
+            position: absolute; /* Absolute position */
+            left: 10px; /* Adjusted for mobile */
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%); /* Adjust for vertical centering */
+            color: white; /* White text */
+            text-decoration: none; /* No underline */
+            font-size: 16px; /* Adjusted font size */
+        }
+        .video-container {
+            margin-top: 15px; /* Reduced margin */
+            display: flex;
+            flex-direction: column; /* Stack videos vertically */
+            align-items: center; /* Center videos horizontally */
+        }
+        .video-container iframe {
+            width: 100%; /* Full width for mobile */
+            max-width: 800px; /* Maximum width */
+            height: auto; /* Auto height for responsive design */
+            aspect-ratio: 16/9; /* Maintain aspect ratio */
+            border: none; /* Remove border */
+            margin-bottom: 20px; /* Space between videos */
+        }
+        .video-title {
+            font-size: 18px; /* Adjusted font size */
+            font-weight: bold; /* Make the title bold */
+            margin-bottom: 10px; /* Space between title and video */
+        }
+        .video-title.second {
+            margin-top: 20px; /* Adjusted top margin */
+        }
+
+        @media (min-width: 600px) {
+            /* Styles for larger screens (tablets, desktops) */
+            body {
+                padding: 50px; /* Restore padding for larger screens */
+            }
+            .banner {
+                padding: 20px; /* Restore padding */
+                font-size: 24px; /* Restore font size */
+            }
+            .home-link {
+                left: 20px; /* Restore position */
+                font-size: 18px; /* Restore font size */
+            }
+            .video-container iframe {
+                height: 450px; /* Set a fixed height */
+            }
+            .video-title {
+                font-size: 20px; /* Restore font size */
+            }
+            .video-title.second {
+                margin-top: 30px; /* Restore top margin */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <a href="index.html" class="home-link">Ana Sayfa</a>
+        Şaban Ataş Cinayeti - Canlı Yayında İtiraf
+    </div>
+    <div class="video-container">
+        <div class="video-title">Bölüm 1</div>
+        <iframe src="https://www.youtube.com/embed/auO9NdJrDs4?start=996&end=5480" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <div class="video-title second">Bölüm 2</div>
+        <iframe src="https://www.youtube.com/embed/7g-QeWm0BOc?start=1262&end=5404" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
 
