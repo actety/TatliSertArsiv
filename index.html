@@ -3,50 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Müge Anlı ile Tatlı Sert Arşivi</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px; /* Padding to position the content */
+            background-color: #f4f4f4; /* Light background for contrast */
+            color: #333; /* Darker text for readability */
         }
         .banner {
-            background-color: #5A7D9A; /* Light dark blue background */
-            color: white; /* White text */
-            text-align: center; /* Centered text */
-            padding: 20px; /* Some padding */
-            font-size: 24px; /* Larger font size */
+            background-color: #5A7D9A; /* Light dark blue */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
         }
-        .info-text {
-            padding: 30px; /* Increased padding for more emphasis */
-            font-size: 22px; /* Larger font size */
-            color: #fff; /* White text */
-            background-color: #333; /* Dark background color for contrast */
-            border: 3px solid #5A7D9A; /* Border matching the banner color */
-            border-radius: 10px; /* Rounded corners for a softer look */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-            margin: 20px auto; /* Center the text and add vertical margin */
-            max-width: 90%; /* Responsive width */
+        .main-content {
+            text-align: center;
+            padding: 20px;
         }
-        .tile-container {
+        .highlight-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d9534f; /* Striking red color */
+            margin-bottom: 30px;
+        }
+        .tiles {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding-top: 20px; /* Padding between the info text and the tiles */
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+            justify-content: center; /* Center the tiles */
+            gap: 20px; /* Spacing between tiles */
         }
         .tile {
-            margin: 10px; /* Margin between tiles */
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 200px;
         }
         .tile img {
-            width: 400px; /* Width of the rectangle image (doubled) */
-            height: 200px; /* Height of the rectangle image (doubled) */
-            border: 2px solid #5A7D9A; /* Border color matching the banner */
+            width: 100%;
+            height: auto;
         }
         .tile-title {
-            margin-top: 10px; /* Margin above the tile title */
-            font-size: 18px; /* Font size for the tile title */
-            color: #333; /* Dark color for the tile title */
+            padding: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            .tile {
+                width: 100%; /* Make tiles full-width on small screens */
+            }
         }
     </style>
 </head>
@@ -54,42 +62,36 @@
     <div class="banner">
         Müge Anlı ile Tatlı Sert Arşivi
     </div>
-    <div class="info-text">
-        Videoları ileri sarmadan, olayın ele alındığı andan itibaren izlemeye başlayın. Olayla ilgili kısım bittiğinde video sonlanacaktır.
-    </div>
-    <div class="tile-container">
-        <div class="tile">
-            <a href="new-page.html">
-                <img src="https://iatkv.tmgrup.com.tr/4758d3/1200/675/127/0/1608/833?u=https%3A%2F%2Fitkv.tmgrup.com.tr%2F2024%2F05%2F14%2Fmuge-anli-saban-atasin-cesedini-buldu-muhabirin-naasi-buldugu-anlar-kamerada-atv-muge-anli-bugunku-programi-ci-1715678487601.jpg" alt="Example Link">
-            </a>
-            <div class="tile-title">
-                Şaban Ataş Cinayeti - Canlı Yayında İtiraf
-            </div>
+
+    <div class="main-content">
+        <div class="highlight-text">
+            Videoları ileri sarmadan, olayın ele alındığı andan itibaren izlemeye başlayın. Olayla ilgili kısım bittiğinde video sonlanacaktır.
         </div>
-        <div class="tile">
-            <a href="https://www.anotherexample.com">
-                <img src="https://via.placeholder.com/400x200" alt="Another Example Link">
+
+        <div class="tiles">
+            <!-- First Tile -->
+            <a href="saban_atas.html" class="tile">
+                <img src="https://iatkv.tmgrup.com.tr/4758d3/1200/675/127/0/1608/833?u=https%3A%2F%2Fitkv.tmgrup.com.tr%2F2024%2F05%2F14%2Fmuge-anli-saban-atasin-cesedini-buldu-muhabirin-naasi-buldugu-anlar-kamerada-atv-muge-anli-bugunku-programi-ci-1715678487601.jpg" alt="Şaban Ataş Cinayeti">
+                <div class="tile-title">Şaban Ataş Cinayeti - Canlı Yayında İtiraf</div>
             </a>
-            <div class="tile-title">
-                Visit Another Example Website
-            </div>
-        </div>
-        <div class="tile">
-            <a href="https://www.yetanotherexample.com">
-                <img src="https://via.placeholder.com/400x200" alt="Yet Another Example Link">
+
+            <!-- Placeholder Tiles for the Remaining Three -->
+            <a href="#" class="tile">
+                <img src="https://via.placeholder.com/200x120.png?text=Tile+2" alt="Placeholder">
+                <div class="tile-title">Tile Title 2</div>
             </a>
-            <div class="tile-title">
-                Visit Yet Another Example Website
-            </div>
-        </div>
-        <div class="tile">
-            <a href="https://www.lastexample.com">
-                <img src="https://via.placeholder.com/400x200" alt="Last Example Link">
+
+            <a href="#" class="tile">
+                <img src="https://via.placeholder.com/200x120.png?text=Tile+3" alt="Placeholder">
+                <div class="tile-title">Tile Title 3</div>
             </a>
-            <div class="tile-title">
-                Visit Last Example Website
-            </div>
+
+            <a href="#" class="tile">
+                <img src="https://via.placeholder.com/200x120.png?text=Tile+4" alt="Placeholder">
+                <div class="tile-title">Tile Title 4</div>
+            </a>
         </div>
     </div>
 </body>
 </html>
+
